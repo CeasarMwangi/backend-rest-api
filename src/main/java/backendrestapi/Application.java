@@ -27,6 +27,7 @@ import org.springframework.jms.support.converter.MappingJackson2MessageConverter
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import backendrestapi.common.CommonFunctions;
@@ -173,6 +174,21 @@ public class Application  extends SpringBootServletInitializer{
             //app.manageDuplicateTransactions();
         };
     }
+    
+	/**
+	 * Here we are creating an instance of BCryptPasswordEncoder by implementing
+	 * a method that generates an instance of BCryptPasswordEncoder
+	 *
+	 * Thus spring boot DI/IoC will be able to auto-wire this bean whenever its
+	 * required
+	 *
+	 * @return
+	 */
+	@Bean
+	public BCryptPasswordEncoder bCryptPasswordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+	
     @Bean
     public ActiveMQConnectionFactory connectionFactory() {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory();

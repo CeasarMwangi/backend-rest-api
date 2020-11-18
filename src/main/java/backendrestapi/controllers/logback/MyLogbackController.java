@@ -1,6 +1,8 @@
 package backendrestapi.controllers.logback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,8 +15,10 @@ import backendrestapi.common.AppUtilities;
 @RequestMapping(path = AppUtilities.BASE_API_PATH + "/logback/logging")
 
 public class MyLogbackController {
-	Logger logger = LoggerFactory.getLogger(MyLogbackController.class);
-	 
+
+	@Autowired
+	private BCryptPasswordEncoder bCryptPasswordEncoder;
+	
 	@PostMapping(value = "/log-to-file")
     public String index() {
     	String logMsg = "In this article, we saw how to use logging in Spring Boot and how to customize it "
@@ -33,6 +37,6 @@ public class MyLogbackController {
     		AppLogger.appRequestsLogger.error(logMsg);
     	}
  
-        return "Howdy! Check out the Logs to see the output...";
+        return "123456 => "+bCryptPasswordEncoder.encode("123456");
     }
 }
