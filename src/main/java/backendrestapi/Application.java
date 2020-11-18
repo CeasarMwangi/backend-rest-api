@@ -29,8 +29,8 @@ import org.springframework.jms.support.converter.MessageType;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import backendrestapi.common.CommonFunctions;
 import backendrestapi.request.filter.RequestAndResponseLoggingFilter;
-import compas.common.CommonFunctions;
 
 
 
@@ -38,16 +38,12 @@ import compas.common.CommonFunctions;
 /**
  * Created by CLLSDJACKT013 on 08/05/2018.
  */
-@SpringBootApplication(scanBasePackages = "compas")
+@SpringBootApplication(scanBasePackages = "backendrestapi")
 @EnableConfigurationProperties(ApplicationService.class)
 /*@EnableAutoConfiguration*/
 @EnableTransactionManagement
-@EntityScan("compas.models")
-@EnableJpaRepositories(basePackages = {"compas.posrequest","compas.agent","compas.device","compas.accountrequest",
-		"compas.user","compas.bank","compas.txn_params","compas.utilities","compas.currency",
-		"compas.authentications","compas.transaction","compas.tariffs","compas.transactionschannel",
-		"compas.customer","compas.security", "compas.account_transaction_limits",
-		"compas.loanrequest","compas.atmcardrequest", "compas.repositories"})
+@EntityScan("backendrestapi.models")
+@EnableJpaRepositories(basePackages = {"backendrestapi.repositories"})
 @EnableJms
 @EnableScheduling
 public class Application  extends SpringBootServletInitializer{

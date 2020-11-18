@@ -19,15 +19,11 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-@PropertySource({"file:C:\\srv\\applications\\externalConfigs\\PBU_Agency_API\\application.properties"})
+@PropertySource({"file:D:\\Ceasar\\Projects\\SpringBoot\\backend-rest-api\\application.properties"})
 @ConfigurationProperties
     public class ApplicationService
     {
-
-        @Value("${api.username}")
-        private String api_username;
-        @Value("${api.password}")
-        private String api_password;
+        
         @Autowired
         private Environment environment;
         

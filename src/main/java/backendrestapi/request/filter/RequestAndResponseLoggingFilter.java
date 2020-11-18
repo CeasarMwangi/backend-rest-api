@@ -9,7 +9,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
-import compas.common.CommonFunctions;
+import backendrestapi.common.CommonFunctions;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
