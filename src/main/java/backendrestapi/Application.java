@@ -5,6 +5,9 @@ import java.util.Properties;
 import javax.jms.DeliveryMode;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.jasypt.encryption.StringEncryptor;
+import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
+import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +33,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
+
 import backendrestapi.common.CommonFunctions;
 import backendrestapi.request.filter.RequestAndResponseLoggingFilter;
 
@@ -40,6 +45,7 @@ import backendrestapi.request.filter.RequestAndResponseLoggingFilter;
  * Created by CLLSDJACKT013 on 08/05/2018.
  */
 @SpringBootApplication(scanBasePackages = "backendrestapi")
+@EnableEncryptableProperties
 @EnableConfigurationProperties(ApplicationService.class)
 /*@EnableAutoConfiguration*/
 @EnableTransactionManagement
@@ -49,6 +55,9 @@ import backendrestapi.request.filter.RequestAndResponseLoggingFilter;
 @EnableScheduling
 public class Application  extends SpringBootServletInitializer{
 
+	private static String mpCryptoPassword = "techjava";
+
+	
 	@Value("${ACTIVEMQ_MSG_BROKER_URL}")
 	private String BROKER_URL;
 	
@@ -274,5 +283,20 @@ public class Application  extends SpringBootServletInitializer{
         return registration;
     }
 
+	@Bean("jasyptStringEncryptor")
+	public StringEncryptor stringEncryptor2() {
+		PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
+		SimpleStringPBEConfig config = new SimpleStringPBEConfig();
+		config.setPassword(mpCryptoPassword);
+		config.setAlgorithm("PBEWITHHMACSHA512ANDAES_256");
+		config.setKeyObtentionIterations("1000");
+		config.setPoolSize("1");
+		config.setProviderName("SunJCE");
+		config.setSaltGeneratorClassName("org.jasypt.salt.RandomSaltGenerator");
+		config.setIvGeneratorClassName("org.jasypt.iv.RandomIvGenerator");
+		config.setStringOutputType("base64");
+		encryptor.setConfig(config);
+		return encryptor;
+	}
 
 }
