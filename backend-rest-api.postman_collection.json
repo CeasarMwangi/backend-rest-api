@@ -13,7 +13,8 @@
 					"script": {
 						"id": "56c5cd95-2fc7-45cb-8815-4b2d08755331",
 						"exec": [
-							"postman.setEnvironmentVariable(\"token\", pm.response.headers.get('Authorization'));"
+							"postman.setEnvironmentVariable(\"token\", pm.response.headers.get('Authorization'));\r",
+							"postman.setEnvironmentVariable(\"_csrf\", pm.response.headers.get('_csrf'));"
 						],
 						"type": "text/javascript"
 					}
@@ -52,6 +53,18 @@
 		},
 		{
 			"name": "localhost:8095/api/logback/logging/log-to-file",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a3a188b6-d622-49a1-91cd-79e4b35c4a53",
+						"exec": [
+							"postman.setEnvironmentVariable(\"_csrf\", pm.response.headers.get('_csrf'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -72,8 +85,14 @@
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n}"
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_csrf",
+							"value": "{{_csrf}}",
+							"type": "text"
+						}
+					]
 				},
 				"url": {
 					"raw": "localhost:8095/api/logback/logging/log-to-file",
@@ -93,6 +112,18 @@
 		},
 		{
 			"name": "localhost:8095/api/users/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aec88ab5-d5d6-42d2-8a7c-a946d581d825",
+						"exec": [
+							"postman.setEnvironmentVariable(\"_csrf\", pm.response.headers.get('_csrf'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -116,6 +147,58 @@
 					"path": [
 						"users",
 						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/jasypt-crypto/encrypt-decrypt",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f5d2b6d7-beff-4ab4-b849-2548b2b0ea39",
+						"exec": [
+							"postman.setEnvironmentVariable(\"_csrf\", pm.response.headers.get('_csrf'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": "{{_csrf}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8095/jasypt-crypto/encrypt-decrypt",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"jasypt-crypto",
+						"encrypt-decrypt"
 					]
 				}
 			},
