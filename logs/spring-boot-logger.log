@@ -1869,3 +1869,425 @@ Members {size:1, ver:1} [
 2020-11-20 12:06:22,074 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-4] CSRF token d08bcc79-45a1-4a69-be26-7eb046f3c7ab
 2020-11-20 12:06:26,146 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-5] CSRF token d08bcc79-45a1-4a69-be26-7eb046f3c7ab
 2020-11-20 12:06:29,632 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-6] CSRF token d08bcc79-45a1-4a69-be26-7eb046f3c7ab
+2020-11-20 12:45:52,160 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 12:45:52,164 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 12:45:52,278 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 12:45:52,281 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 12:45:53,943 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 12:45:54,032 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 73ms. Found 1 repository interfaces.
+2020-11-20 12:45:54,992 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 12:45:55,049 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 12:45:55,053 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:45:55,058 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:45:55,061 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:45:55,066 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 12:45:55,068 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:45:55,071 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:45:55,073 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:45:55,075 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:45:55,225 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 12:45:55,335 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:45:55,367 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:45:55,513 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 12:45:55,522 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 12:45:56,591 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 12:45:56,635 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 12:45:56,639 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 12:45:56,915 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 12:45:56,918 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4633 ms
+2020-11-20 12:45:57,358 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 12:45:57,651 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 12:45:57,674 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 12:45:57,676 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 12:45:57,678 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 12:45:58,015 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 12:45:59,466 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 12:45:59,644 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 12:45:59,651 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 12:45:59,661 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 12:46:02,235 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 034324b3-2da4-47f8-afcf-0684a5caf64b this
+]
+
+2020-11-20 12:46:02,313 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 12:46:02,403 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@77fdde42 with name: jasyptStringEncryptor
+2020-11-20 12:46:03,332 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.hazelcast-instance.HealthMonitor] [192.168.1.106]:5701 [dev] [3.11.4] processors=4, physical.memory.total=15.9G, physical.memory.free=7.9G, swap.space.total=18.8G, swap.space.free=7.7G, heap.memory.used=273.9M, heap.memory.free=230.1M, heap.memory.total=504.0M, heap.memory.max=3.5G, heap.memory.used/total=54.35%, heap.memory.used/max=7.58%, minor.gc.count=9, minor.gc.time=87ms, major.gc.count=2, major.gc.time=98ms, load.process=55.63%, load.system=100.00%, load.systemAverage=n/a thread.count=45, thread.peakCount=45, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2020-11-20 12:46:03,341 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-11-20 12:46:03,591 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-11-20 12:46:03,710 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 12:46:03,860 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2020-11-20 12:46:03,868 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2020-11-20 12:46:04,367 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-11-20 12:46:04,573 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 12:46:05,904 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:46:05,969 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 12:46:06,447 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 12:46:07,409 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 12:46:07,948 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 12:46:08,074 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36fd3ac7, org.springframework.security.web.context.SecurityContextPersistenceFilter@f6b23de, org.springframework.security.web.header.HeaderWriterFilter@16c60c55, org.springframework.security.web.csrf.CsrfFilter@25d1d93c, backendrestapi.request.filter.CsrfTokenFilter@39b36835, org.springframework.security.web.authentication.logout.LogoutFilter@2899113c, backendrestapi.jwt.JWTAuthenticationFilter@70dda3e9, backendrestapi.jwt.JWTAuthorizationFilter@7265e4fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59456366, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dd9c1dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d91d375, org.springframework.security.web.session.SessionManagementFilter@a872365, org.springframework.security.web.access.ExceptionTranslationFilter@57460381, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38286c96]
+2020-11-20 12:46:08,957 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 12:46:08,997 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 12:46:09,005 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 17.656 seconds (JVM running for 18.607)
+2020-11-20 12:46:14,205 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8095-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 12:46:14,208 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-20 12:46:14,260 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-1] Completed initialization in 47 ms
+2020-11-20 12:46:14,312 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-1] CSRF token f4fb1129-80bb-42e3-a1c5-f65b1570dcc8
+2020-11-20 12:46:15,042 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-0.0.0.0-8095-exec-1] [192.168.1.106]:5701 [dev] [3.11.4] Initializing cluster partition table arrangement...
+2020-11-20 12:46:20,217 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-3] CSRF token f4fb1129-80bb-42e3-a1c5-f65b1570dcc8
+2020-11-20 12:46:20,338 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-0.0.0.0-8095-exec-3] No mapping for POST /loggedin/userget-details-1
+2020-11-20 12:46:20,354 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-3] CSRF token da100708-364d-4abe-90b3-28dd25498f2d
+2020-11-20 12:46:38,584 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-4] CSRF token da100708-364d-4abe-90b3-28dd25498f2d
+2020-11-20 12:47:29,140 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:47:29,174 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2020-11-20 12:47:29,211 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2020-11-20 12:47:30,141 INFO backendrestapi.Application [restartedMain] timeBased Starting
+2020-11-20 12:47:30,145 INFO backendrestapi.Application [restartedMain] fixWindowBased Starting
+2020-11-20 12:47:30,150 INFO backendrestapi.Application [restartedMain] sizeAndTimeBased Starting
+2020-11-20 12:47:30,353 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 12:47:30,358 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 12:47:31,324 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 12:47:31,341 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 13ms. Found 1 repository interfaces.
+2020-11-20 12:47:31,597 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 12:47:31,602 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 12:47:31,605 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:47:31,608 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:47:31,615 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:47:31,617 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 12:47:31,621 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:47:31,624 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:47:31,633 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:47:31,635 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:47:31,693 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 12:47:31,729 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:47:31,741 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:47:31,772 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 12:47:31,781 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 12:47:32,279 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 12:47:32,289 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 12:47:32,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 12:47:32,360 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 12:47:32,365 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1991 ms
+2020-11-20 12:47:32,546 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 12:47:33,136 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 12:47:33,152 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 12:47:33,156 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 12:47:33,162 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 12:47:33,185 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 12:47:34,332 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 12:47:34,348 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 12:47:34,351 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 12:47:34,353 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 12:47:37,546 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 0db32c5e-ea3a-4d80-a587-58a8b632c020 this
+]
+
+2020-11-20 12:47:37,557 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 12:47:37,593 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@37009f57 with name: jasyptStringEncryptor
+2020-11-20 12:47:37,726 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2020-11-20 12:47:37,783 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2020-11-20 12:47:37,802 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 12:47:37,866 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 12:47:38,712 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:47:38,762 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 12:47:38,893 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 12:47:39,398 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 12:47:39,598 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 12:47:39,648 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cf207ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@3be8adef, org.springframework.security.web.header.HeaderWriterFilter@6e77d3b7, org.springframework.security.web.csrf.CsrfFilter@12cf321e, backendrestapi.request.filter.CsrfTokenFilter@2947716a, org.springframework.security.web.authentication.logout.LogoutFilter@5352f495, backendrestapi.jwt.JWTAuthenticationFilter@1d6e096a, backendrestapi.jwt.JWTAuthorizationFilter@3347a959, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3254080c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62ee9f9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f561da1, org.springframework.security.web.session.SessionManagementFilter@50dc3a28, org.springframework.security.web.access.ExceptionTranslationFilter@67cddf09, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1da6743a]
+2020-11-20 12:47:40,046 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 12:47:40,236 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 12:47:40,256 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 10.094 seconds (JVM running for 109.855)
+2020-11-20 12:47:40,267 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-11-20 12:47:52,965 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8095-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 12:47:52,975 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-9] Initializing Servlet 'dispatcherServlet'
+2020-11-20 12:47:52,988 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-9] Completed initialization in 9 ms
+2020-11-20 12:47:52,994 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-9] CSRF token 6504b433-8121-486c-ac10-6e9b1e752cc7
+2020-11-20 12:47:53,452 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-0.0.0.0-8095-exec-9] [192.168.1.106]:5701 [dev] [3.11.4] Initializing cluster partition table arrangement...
+2020-11-20 12:47:58,794 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-8] CSRF token 6504b433-8121-486c-ac10-6e9b1e752cc7
+2020-11-20 12:48:56,310 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:48:56,332 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown initiated...
+2020-11-20 12:48:56,363 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown completed.
+2020-11-20 12:48:56,982 INFO backendrestapi.Application [restartedMain] timeBased Starting
+2020-11-20 12:48:56,987 INFO backendrestapi.Application [restartedMain] fixWindowBased Starting
+2020-11-20 12:48:56,992 INFO backendrestapi.Application [restartedMain] sizeAndTimeBased Starting
+2020-11-20 12:48:57,114 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 12:48:57,122 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 12:48:57,573 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 12:48:57,586 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10ms. Found 1 repository interfaces.
+2020-11-20 12:48:57,716 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 12:48:57,718 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 12:48:57,724 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:48:57,725 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:48:57,727 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:48:57,728 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 12:48:57,735 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:48:57,738 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:48:57,739 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:48:57,741 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:48:57,761 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 12:48:57,784 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:48:57,789 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:48:57,812 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 12:48:57,814 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 12:48:58,092 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 12:48:58,096 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 12:48:58,100 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 12:48:58,138 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 12:48:58,139 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1008 ms
+2020-11-20 12:48:58,247 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 12:48:58,526 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 12:48:58,532 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 12:48:58,534 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 12:48:58,535 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 12:48:58,542 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 12:48:59,013 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 12:48:59,022 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 12:48:59,025 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 12:48:59,026 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 12:49:01,771 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 7e594656-3ad6-48c7-bc01-6da7c722bfdd this
+]
+
+2020-11-20 12:49:01,782 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 12:49:01,847 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@4aa7cfa7 with name: jasyptStringEncryptor
+2020-11-20 12:49:01,922 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2020-11-20 12:49:01,955 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2020-11-20 12:49:01,967 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 12:49:02,002 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 12:49:02,438 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:49:02,462 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 12:49:02,539 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 12:49:02,745 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 12:49:02,840 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 12:49:02,854 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52ba1cfc, org.springframework.security.web.context.SecurityContextPersistenceFilter@358da9d6, org.springframework.security.web.header.HeaderWriterFilter@534d38c1, org.springframework.security.web.csrf.CsrfFilter@77a92142, backendrestapi.request.filter.CsrfTokenFilter@1f8da1a7, org.springframework.security.web.authentication.logout.LogoutFilter@a621c2, backendrestapi.jwt.JWTAuthenticationFilter@2ffe609f, backendrestapi.jwt.JWTAuthorizationFilter@3e915f9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30dbc920, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a6a74ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ccee94d, org.springframework.security.web.session.SessionManagementFilter@b902ad7, org.springframework.security.web.access.ExceptionTranslationFilter@4078a572, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@691f1c3b]
+2020-11-20 12:49:03,020 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 12:49:03,032 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 12:49:03,039 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.032 seconds (JVM running for 192.641)
+2020-11-20 12:49:03,048 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-11-20 12:54:01,335 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8095-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 12:54:01,340 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-11-20 12:54:01,353 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-2] Completed initialization in 8 ms
+2020-11-20 12:54:01,357 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-2] CSRF token 2544f36c-0aa9-414a-9df6-4f86d1ea47c0
+2020-11-20 12:54:01,629 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-0.0.0.0-8095-exec-2] [192.168.1.106]:5701 [dev] [3.11.4] Initializing cluster partition table arrangement...
+2020-11-20 12:54:05,522 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-4] CSRF token 2544f36c-0aa9-414a-9df6-4f86d1ea47c0
+2020-11-20 12:54:44,746 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-17] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:54:44,755 INFO com.zaxxer.hikari.HikariDataSource [Thread-17] HikariPool-3 - Shutdown initiated...
+2020-11-20 12:54:44,770 INFO com.zaxxer.hikari.HikariDataSource [Thread-17] HikariPool-3 - Shutdown completed.
+2020-11-20 12:54:45,400 INFO backendrestapi.Application [restartedMain] timeBased Starting
+2020-11-20 12:54:45,401 INFO backendrestapi.Application [restartedMain] fixWindowBased Starting
+2020-11-20 12:54:45,406 INFO backendrestapi.Application [restartedMain] sizeAndTimeBased Starting
+2020-11-20 12:54:45,516 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 12:54:45,519 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 12:54:46,019 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 12:54:46,030 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 9ms. Found 1 repository interfaces.
+2020-11-20 12:54:46,154 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 12:54:46,157 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 12:54:46,162 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:54:46,164 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:54:46,166 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:54:46,171 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 12:54:46,174 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 12:54:46,175 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:54:46,177 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:54:46,178 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 12:54:46,195 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 12:54:46,214 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:54:46,220 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 12:54:46,238 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 12:54:46,240 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 12:54:46,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 12:54:46,627 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 12:54:46,632 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 12:54:46,671 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 12:54:46,674 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1146 ms
+2020-11-20 12:54:46,786 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 12:54:47,184 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 12:54:47,196 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 12:54:47,199 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 12:54:47,201 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 12:54:47,227 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 12:54:47,771 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 12:54:47,780 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 12:54:47,784 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 12:54:47,785 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 12:54:50,446 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 8703ea83-a759-4a2c-8069-13f048453c14 this
+]
+
+2020-11-20 12:54:50,455 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 12:54:50,478 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@2795743f with name: jasyptStringEncryptor
+2020-11-20 12:54:50,567 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2020-11-20 12:54:50,611 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2020-11-20 12:54:50,625 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 12:54:50,673 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 12:54:51,102 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 12:54:51,127 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 12:54:51,225 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 12:54:51,499 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 12:54:51,624 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 12:54:51,640 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4befb25f, org.springframework.security.web.context.SecurityContextPersistenceFilter@377c5f4e, org.springframework.security.web.header.HeaderWriterFilter@12862dd7, org.springframework.security.web.csrf.CsrfFilter@48c3c53a, backendrestapi.request.filter.CsrfTokenFilter@473bc4d0, org.springframework.security.web.authentication.logout.LogoutFilter@11fa5935, backendrestapi.jwt.JWTAuthenticationFilter@ef02cc0, backendrestapi.jwt.JWTAuthorizationFilter@40744205, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5677e6a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75bc812f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76bf7d1e, org.springframework.security.web.session.SessionManagementFilter@6140ac49, org.springframework.security.web.access.ExceptionTranslationFilter@4684fdc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@746755be]
+2020-11-20 12:54:51,903 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 12:54:51,949 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 12:54:51,969 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.556 seconds (JVM running for 541.571)
+2020-11-20 12:54:52,001 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-11-20 12:54:57,404 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8095-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 12:54:57,419 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-11-20 12:54:57,433 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-2] Completed initialization in 8 ms
+2020-11-20 12:54:57,436 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-2] CSRF token 1a616284-8471-4a05-bebc-ffbb1315ca01
+2020-11-20 12:54:57,700 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-0.0.0.0-8095-exec-2] [192.168.1.106]:5701 [dev] [3.11.4] Initializing cluster partition table arrangement...
+2020-11-20 12:55:01,633 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-3] CSRF token 1a616284-8471-4a05-bebc-ffbb1315ca01
+2020-11-20 12:56:04,205 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-7] CSRF token ccad5a2a-425f-4f4c-b082-24c823ceb13b
+2020-11-20 12:56:06,845 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-8] CSRF token ccad5a2a-425f-4f4c-b082-24c823ceb13b
+2020-11-20 12:56:37,587 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-9] CSRF token ae485a76-1dde-48e4-a8db-3b97a57f6184
+2020-11-20 12:56:40,355 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-5] CSRF token ae485a76-1dde-48e4-a8db-3b97a57f6184
+2020-11-20 12:56:57,994 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-10] CSRF token 24008445-84a0-421a-b442-28ec23937f59
+2020-11-20 12:57:01,374 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-1] CSRF token 24008445-84a0-421a-b442-28ec23937f59
+2020-11-20 13:00:53,590 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-23] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 13:00:53,595 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-4 - Shutdown initiated...
+2020-11-20 13:00:53,608 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] HikariPool-4 - Shutdown completed.
+2020-11-20 13:00:54,326 INFO backendrestapi.Application [restartedMain] timeBased Starting
+2020-11-20 13:00:54,326 INFO backendrestapi.Application [restartedMain] fixWindowBased Starting
+2020-11-20 13:00:54,327 INFO backendrestapi.Application [restartedMain] sizeAndTimeBased Starting
+2020-11-20 13:00:54,407 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 13:00:54,408 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 13:00:54,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 13:00:54,914 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11ms. Found 1 repository interfaces.
+2020-11-20 13:00:55,050 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 13:00:55,051 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 13:00:55,052 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:00:55,053 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:00:55,054 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:00:55,055 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 13:00:55,056 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:00:55,056 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:00:55,057 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:00:55,059 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:00:55,075 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 13:00:55,091 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 13:00:55,097 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 13:00:55,114 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 13:00:55,115 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 13:00:55,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 13:00:55,373 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 13:00:55,376 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 13:00:55,414 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 13:00:55,415 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1002 ms
+2020-11-20 13:00:55,532 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 13:00:55,815 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 13:00:55,818 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 13:00:55,819 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 13:00:55,821 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 13:00:55,826 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 13:00:56,470 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 13:00:56,501 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 13:00:56,512 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 13:00:56,515 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 13:00:59,300 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 5870bb85-1b1d-419a-be10-e6fd2aa236aa this
+]
+
+2020-11-20 13:00:59,303 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 13:00:59,327 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@42361d49 with name: jasyptStringEncryptor
+2020-11-20 13:00:59,387 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2020-11-20 13:00:59,417 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2020-11-20 13:00:59,426 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 13:00:59,470 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 13:00:59,873 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 13:00:59,910 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 13:00:59,996 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 13:01:00,333 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 13:01:00,412 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 13:01:00,423 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@690f26db, org.springframework.security.web.context.SecurityContextPersistenceFilter@45a6b45f, org.springframework.security.web.header.HeaderWriterFilter@756867eb, org.springframework.security.web.csrf.CsrfFilter@7aefbfc7, backendrestapi.request.filter.CsrfTokenFilter@5d56287d, org.springframework.security.web.authentication.logout.LogoutFilter@2c6d6848, backendrestapi.jwt.JWTAuthenticationFilter@6eba51c8, backendrestapi.jwt.JWTAuthorizationFilter@5944a60b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@592d166b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f4c759a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49ed7a06, org.springframework.security.web.session.SessionManagementFilter@42b03a49, org.springframework.security.web.access.ExceptionTranslationFilter@6a3ec52d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33109b37]
+2020-11-20 13:01:00,563 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 13:01:00,573 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 13:01:00,582 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.25 seconds (JVM running for 910.184)
+2020-11-20 13:01:00,601 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-11-20 13:01:23,996 INFO org.apache.juli.logging.DirectJDKLog [http-nio-0.0.0.0-8095-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 13:01:24,001 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-3] Initializing Servlet 'dispatcherServlet'
+2020-11-20 13:01:24,009 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-0.0.0.0-8095-exec-3] Completed initialization in 5 ms
+2020-11-20 13:01:24,011 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-3] CSRF token e9f2c012-0036-4509-8c8c-2401c04dd7fc
+2020-11-20 13:01:24,293 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-0.0.0.0-8095-exec-3] [192.168.1.106]:5701 [dev] [3.11.4] Initializing cluster partition table arrangement...
+2020-11-20 13:01:28,639 INFO backendrestapi.request.filter.CsrfTokenFilter [http-nio-0.0.0.0-8095-exec-1] CSRF token e9f2c012-0036-4509-8c8c-2401c04dd7fc
+2020-11-20 13:06:11,428 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-29] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 13:06:11,432 INFO com.zaxxer.hikari.HikariDataSource [Thread-29] HikariPool-5 - Shutdown initiated...
+2020-11-20 13:06:11,442 INFO com.zaxxer.hikari.HikariDataSource [Thread-29] HikariPool-5 - Shutdown completed.
+2020-11-20 13:06:12,027 INFO backendrestapi.Application [restartedMain] timeBased Starting
+2020-11-20 13:06:12,030 INFO backendrestapi.Application [restartedMain] fixWindowBased Starting
+2020-11-20 13:06:12,034 INFO backendrestapi.Application [restartedMain] sizeAndTimeBased Starting
+2020-11-20 13:06:12,143 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on DESKTOP-8JHQQFG with PID 11044 (D:\Ceasar\Projects\SpringBoot\backend-rest-api\target\classes started by Ceasar in D:\Ceasar\Projects\SpringBoot\backend-rest-api)
+2020-11-20 13:06:12,144 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-20 13:06:12,943 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-20 13:06:12,959 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 13ms. Found 1 repository interfaces.
+2020-11-20 13:06:13,160 INFO com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor [restartedMain] Post-processing PropertySource instances
+2020-11-20 13:06:13,163 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-11-20 13:06:13,169 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:06:13,184 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:06:13,188 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:06:13,192 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-11-20 13:06:13,204 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-11-20 13:06:13,209 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:06:13,216 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:06:13,219 INFO com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter [restartedMain] Converting PropertySource URL [file:D:/Ceasar/Projects/SpringBoot/backend-rest-api/application.properties] [org.springframework.core.io.support.ResourcePropertySource] to EncryptableMapPropertySourceWrapper
+2020-11-20 13:06:13,255 INFO com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter [restartedMain] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-11-20 13:06:13,285 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edcff4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 13:06:13,293 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1e5d4c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-20 13:06:13,316 INFO com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver [restartedMain] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-11-20 13:06:13,318 INFO com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector [restartedMain] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-11-20 13:06:13,703 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8095 (http)
+2020-11-20 13:06:13,716 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-20 13:06:13,718 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-11-20 13:06:13,764 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-20 13:06:13,766 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1611 ms
+2020-11-20 13:06:13,908 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-11-20 13:06:14,344 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [LOCAL] [dev] [3.11.4] Picked [192.168.1.106]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-11-20 13:06:14,352 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.1.106]:5701
+2020-11-20 13:06:14,364 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-11-20 13:06:14,366 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+2020-11-20 13:06:14,378 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Backpressure is disabled
+2020-11-20 13:06:15,158 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Creating MulticastJoiner
+2020-11-20 13:06:15,166 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-11-20 13:06:15,168 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-11-20 13:06:15,170 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTING
+2020-11-20 13:06:18,038 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.106]:5701 - 4b42bd5d-b6e5-46d5-a245-628ae22c5817 this
+]
+
+2020-11-20 13:06:18,064 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [restartedMain] [192.168.1.106]:5701 [dev] [3.11.4] [192.168.1.106]:5701 is STARTED
+2020-11-20 13:06:18,088 INFO com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor [restartedMain] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@46d1fe4a with name: jasyptStringEncryptor
+2020-11-20 13:06:18,137 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2020-11-20 13:06:18,165 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2020-11-20 13:06:18,177 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-11-20 13:06:18,224 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2020-11-20 13:06:19,210 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 13:06:19,245 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-11-20 13:06:19,717 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2020-11-20 13:06:20,568 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 13:06:20,833 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: Ant [pattern='/resources/**'], []
+2020-11-20 13:06:20,869 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@795a4841, org.springframework.security.web.context.SecurityContextPersistenceFilter@44c338bd, org.springframework.security.web.header.HeaderWriterFilter@1fabf53, org.springframework.security.web.csrf.CsrfFilter@7ab2716a, backendrestapi.request.filter.CsrfTokenFilter@635bcaa5, org.springframework.security.web.authentication.logout.LogoutFilter@58149697, backendrestapi.jwt.JWTAuthenticationFilter@619bb215, backendrestapi.jwt.JWTAuthorizationFilter@6464402a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384d87b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c99a7c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f5704a7, org.springframework.security.web.session.SessionManagementFilter@2d133554, org.springframework.security.web.access.ExceptionTranslationFilter@18dc85d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@735ec488]
+2020-11-20 13:06:21,401 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-20 13:06:21,438 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8095 (http) with context path ''
+2020-11-20 13:06:21,451 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 9.408 seconds (JVM running for 1231.053)
+2020-11-20 13:06:21,469 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
