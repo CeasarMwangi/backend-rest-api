@@ -30,8 +30,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	private UserDetailsServiceImpl userDetailsService;
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-	@Autowired
-	CustomPasswordEncoder customPasswordEncoder;
 
 	public WebSecurityConfig(UserDetailsServiceImpl userDetailsService, BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.userDetailsService = userDetailsService;
@@ -99,8 +97,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .requireCsrfProtectionMatcher(csrfRequestMatcher)
         .and().addFilterAfter(new CsrfTokenFilter(), CsrfFilter.class).authorizeRequests()
 				.antMatchers(HttpMethod.POST, SecurityConstants.SIGN_UP_URL).permitAll().anyRequest().authenticated()
-				.and().addFilter(new JWTAuthenticationFilter(authenticationManager()))
-				.addFilter(new JWTAuthorizationFilter(authenticationManager()))
+				.and().addFilter(new JWTAuthenticationFilter(authenticationManager(), userDetailsService))
+				.addFilter(new JWTAuthorizationFilter(authenticationManager(), userDetailsService))
 				// this disables session creation on Spring Security
 				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 

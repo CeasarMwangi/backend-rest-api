@@ -1,39 +1,47 @@
 package backendrestapi.jwt;
 
 
-import com.auth0.jwt.JWT;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hazelcast.core.Hazelcast;
-import com.hazelcast.core.HazelcastInstance;
+import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 
-import backendrestapi.models.Users;
-
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Map;
 
-import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.auth0.jwt.JWT;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hazelcast.core.Hazelcast;
+import com.hazelcast.core.HazelcastInstance;
+
+import backendrestapi.models.Role;
+import backendrestapi.models.Users;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
-
+	private UserDetailsServiceImpl userDetailsService;
     final HazelcastInstance hazelcastInstance = Hazelcast.getHazelcastInstanceByName("hazelcast-instance");
 
     private AuthenticationManager authenticationManager;
 
-    public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
+    public JWTAuthenticationFilter(AuthenticationManager authenticationManager, UserDetailsServiceImpl userDetailsService) {
         this.authenticationManager = authenticationManager;
+        this.userDetailsService = userDetailsService;
         setFilterProcessesUrl("/api/services/controller/user/login"); 
     }
 
@@ -50,7 +58,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                     new UsernamePasswordAuthenticationToken(
                             creds.getUsername(),
                             creds.getPassword(),
-                            new ArrayList<>())
+                            getUserAuthorities(creds.getUsername()))
             );
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -65,6 +73,8 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
         String username = ((User) auth.getPrincipal()).getUsername();
         System.out.println("Login username: "+username);
+        System.out.println("Login Authorities: "+((User) auth.getPrincipal()).getAuthorities());
+        
         String token = JWT.create()
                 .withSubject(((User) auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + SecurityConstants.EXPIRATION_TIME))
@@ -79,5 +89,35 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
 
         res.addHeader(SecurityConstants.HEADER_STRING, SecurityConstants.TOKEN_PREFIX + token);
+    }
+    
+    private Collection<? extends GrantedAuthority> getAuthorities(
+    		  Collection<Role> roles) {
+    		    List<GrantedAuthority> authorities
+    		      = new ArrayList<>();
+    		    for (Role role: roles) {
+    		        authorities.add(new SimpleGrantedAuthority(role.getName()));
+    		        role.getPrivileges().stream()
+    		         .map(p -> new SimpleGrantedAuthority(p.getName()))
+    		         .forEach(authorities::add);
+    		    }
+    		    
+    		    return authorities;
+    		}
+    
+    private Collection<? extends GrantedAuthority> getUserAuthorities(String username){
+
+    	try{
+    		UserDetails uDetails = userDetailsService.loadUserByUsername(username);
+    		if(uDetails != null){
+    			System.out.println("SIZE::: "+uDetails.getAuthorities().size());
+    			return uDetails.getAuthorities();
+    		}
+    		
+    	}catch(Exception ex){
+    		
+    	}
+    	System.out.println("SIZE::: "+0);
+    	return new ArrayList<>();
     }
 }

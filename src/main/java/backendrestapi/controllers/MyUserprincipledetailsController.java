@@ -47,14 +47,18 @@ public class MyUserprincipledetailsController {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		if (!(authentication instanceof AnonymousAuthenticationToken)) {
 			
-//			UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-//			System.out.println("User has authorities: " + userDetails.getAuthorities());
+			UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+			System.out.println("User has authorities: " + userDetails.getAuthorities());
 			// getUsername() - Returns the username used to authenticate the user.
-//			System.out.println("User name: " + userDetails.getUsername());
+			System.out.println("User name: " + userDetails.getUsername());
 
+			
 			// getAuthorities() - Returns the authorities granted to the user.
 //			System.out.println("User has authorities: " + userDetails.getAuthorities());
 
+			
+			System.out.println("String!!!: " +SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+			
 			Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			if (principal instanceof UserDetails) {
 				String username = ((UserDetails)principal).getUsername();
@@ -86,6 +90,7 @@ public class MyUserprincipledetailsController {
 		for (SimpleGrantedAuthority permission : list) {
 		     System.out.println(permission.getAuthority());
 		}
+		System.out.println("....4...!");
         return authentication.getName();
     }
 	

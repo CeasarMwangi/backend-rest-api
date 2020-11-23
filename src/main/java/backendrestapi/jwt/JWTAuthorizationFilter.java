@@ -8,7 +8,9 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -17,15 +19,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
+	private UserDetailsServiceImpl userDetailsService;
     final HazelcastInstance hazelcastInstance = Hazelcast.getHazelcastInstanceByName("hazelcast-instance");
 
 
-    public JWTAuthorizationFilter(AuthenticationManager authManager) {
+    public JWTAuthorizationFilter(AuthenticationManager authManager, UserDetailsServiceImpl userDetailsService) {
         super(authManager);
+        this.userDetailsService = userDetailsService;
     }
 
     @Override
@@ -73,7 +78,9 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
                 if (token.equals(cachedUserToken) && user != null) {
                     System.out.println(" Token is valid....");
-                    return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
+//                    return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
+                    UserDetails userDetails = getUserAuthorities(user);
+                    return new UsernamePasswordAuthenticationToken(userDetails, null, getUserAuthorities(userDetails));
                 }
 
                 System.out.println(" Invalid token from in-memory database....");
@@ -86,5 +93,30 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
         }
         return null;
+    }
+    
+    private UserDetails getUserAuthorities(String username){
+
+    	try{
+    		return userDetailsService.loadUserByUsername(username);    		
+    	}catch(Exception ex){
+    		
+    	}
+
+    	return null;
+    }
+    private Collection<? extends GrantedAuthority> getUserAuthorities(UserDetails uDetails){
+
+    	try{
+    		if(uDetails != null){
+    			System.out.println("SIZE::: "+uDetails.getAuthorities().size());
+    			return uDetails.getAuthorities();
+    		}
+    		
+    	}catch(Exception ex){
+    		
+    	}
+    	System.out.println("SIZE::: "+0);
+    	return new ArrayList<>();
     }
 }
